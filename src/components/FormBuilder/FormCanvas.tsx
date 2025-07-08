@@ -147,7 +147,7 @@ const FormCanvas: React.FC = () => {
         <div
           className={`min-h-full transition-all duration-200 ${
             isDragginOver 
-              ? 'bg-blue-50 border-2 border-blue-300 border-dashed' 
+              ? 'bg-grey-50 border-2 border-grey-300 border-dashed' 
               : 'bg-white border border-gray-200'
           } rounded-lg p-6`}
           onDragOver={handleDragOver}
@@ -167,8 +167,8 @@ const FormCanvas: React.FC = () => {
               <p className="text-gray-500 mb-6">
                 Drag fields from the palette or click to add them to your form
               </p>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-md mx-auto">
-                <p className="text-sm text-blue-800">
+              <div className="bg-grey-50 border border-grey-200 rounded-lg p-4 max-w-md mx-auto">
+                <p className="text-sm text-grey-800">
                   <strong>Pro Tip:</strong> You can reorder fields by dragging them up and down once they're added.
                 </p>
               </div>
@@ -186,10 +186,10 @@ const FormCanvas: React.FC = () => {
                     transition={{ duration: 0.2 }}
                     className={`group relative p-4 border rounded-lg transition-all duration-200 ${
                       selectedFieldId === field.id
-                        ? 'border-blue-500 shadow-md bg-blue-50'
+                        ? 'border-grey-500 shadow-md bg-grey-50'
                         : 'border-gray-200 bg-white hover:border-gray-300 hover:shadow-sm'
                     } ${
-                      dragOverIndex === index ? 'border-blue-400 shadow-lg' : ''
+                      dragOverIndex === index ? 'border-grey-400 shadow-lg' : ''
                     }`}
                     draggable
                     onDragStart={(e:any) => handleFieldDragStart(e, index)}
@@ -262,7 +262,7 @@ const FormCanvas: React.FC = () => {
               >
                 <Button
                   variant="outline"
-                  className="flex items-center space-x-2 border-dashed border-2 hover:border-blue-300 hover:bg-blue-50"
+                  className="flex items-center space-x-2 border-dashed border-2 hover:border-grey-300 hover:bg-grey-50"
                   onClick={() => {
                     // This could open a quick field selector
                   }}

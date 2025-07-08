@@ -105,13 +105,13 @@ const FieldPalette: React.FC = () => {
                 draggable
                 onDragStart={(e) => handleDragStart(e, field)}
                 onClick={() => handleAddField(field)}
-                className="cursor-pointer group p-3 bg-white border border-gray-200 rounded-md hover:shadow-sm hover:border-blue-400 transition-all"
+                className="cursor-pointer group p-3 bg-white border border-gray-200 rounded-md hover:shadow-sm hover:border-black-400 transition-all"
               >
                 <div className="flex items-start space-x-2">
-                  <Icon className="h-5 w-5 text-gray-500 group-hover:text-blue-600 mt-1" />
+                  <Icon className="h-5 w-5 text-gray-500 group-hover:text-black-600 mt-1" />
                   <div>
-                    <p className="text-sm font-medium text-gray-800 group-hover:text-blue-900">{field.label}</p>
-                    <p className="text-xs text-gray-500 group-hover:text-blue-700">{field.description}</p>
+                    <p className="text-sm font-medium text-gray-800 group-hover:text-black-900">{field.label}</p>
+                    <p className="text-xs text-gray-500 group-hover:text-black-700">{field.description}</p>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ const FieldPalette: React.FC = () => {
           placeholder="Search fields..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="pl-10 pr-3 py-2 w-full border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-200"
+          className="pl-10 pr-3 py-2 w-full border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black-200"
         />
       </div>
 

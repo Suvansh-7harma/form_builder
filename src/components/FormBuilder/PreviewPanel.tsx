@@ -191,10 +191,10 @@ const PreviewPanel: React.FC = () => {
             className="bg-white rounded-lg shadow-lg overflow-hidden"
           >
             {/* Form Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6">
+            <div className="bg-gradient-to-r from-grey-600 to-grey-700 text-white p-6">
               <h1 className="text-2xl font-bold">{currentForm.title}</h1>
               {currentForm.description && (
-                <p className="text-blue-100 mt-2">{currentForm.description}</p>
+                <p className="text-grey-100 mt-2">{currentForm.description}</p>
               )}
               
               {/* Progress Bar */}
@@ -204,7 +204,7 @@ const PreviewPanel: React.FC = () => {
                     <span>Step {currentStep + 1} of {totalSteps}</span>
                     <span>{Math.round(progress)}%</span>
                   </div>
-                  <Progress value={progress} className="bg-blue-500" />
+                  <Progress value={progress} className="bg-grey-500" />
                 </div>
               )}
             </div>
