@@ -86,5 +86,4 @@ yarn build
 pnpm build
 ```
 
-The built files will be in the `dist` directory, ready to be deployed.
-# form-builder-hypergro-frontend
+
